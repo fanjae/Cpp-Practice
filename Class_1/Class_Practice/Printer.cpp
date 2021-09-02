@@ -6,6 +6,7 @@ class Printer
 {
 	private:
 		char Print_Data[100];
+		
 	public:
 		void SetString(const char *str)
 		{
