@@ -3,6 +3,7 @@
 #include "Car.h"
 using namespace std;
 
+
 // InitMembers : 초기화를 위한 함수 
 void Car::InitMembers(char *ID, int fuel)
 {
