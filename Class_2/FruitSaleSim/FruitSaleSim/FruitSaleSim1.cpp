@@ -22,7 +22,6 @@ public:
 			cout << "사과의 구매를 목적으로 0보다 작은 수를 전달할 수 없습니다." << "\n" << "\n";
 			return 0;
 		}
-
 		int num = money / APPLE_PRICE;
 		numOfApples -= num;
 		myMoney += money;
@@ -70,6 +69,8 @@ int main(void)
 	FruitBuyer buyer;
 	buyer.InitMembers(5000);
 	buyer.BuyApples(seller, 2000);
+
+	buyer.BuyApples(seller, -1);
 
 	cout << "과일 판매자의 현황 " << "\n";
 	seller.ShowSalesResult();
