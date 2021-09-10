@@ -5,6 +5,10 @@
 
 using namespace std;
 
+namespace RISK_LEVEL
+{
+	enum { RISK_A=30, RISK_B=20, RISK_C=10 };
+}
 class Employee // 고용인을 의미하는 Employee 클래스 추가
 {
 private:
@@ -136,37 +140,51 @@ public:
 	// 따라서, SalesWorker 클래스 내에서 GetPay 함수를 호출하면, SalesWorker 클래스에 정의된 GetPay 함수가 호출된다.
 	// 위에서 PermanentWorker::GetPay()는 오버라이딩 된 기초 클래스의 GetPay 함수를 호출하는 구문이다.
 };
+
+class ForeignSalesWorker : public SalesWorker
+{
+private:
+	const int riskLevel;
+public:
+	ForeignSalesWorker(const char *name, int money, double ratio, int risk) : SalesWorker(name, money, ratio), riskLevel(risk)
+	{
+
+	}
+	int GetRiskPay() const
+	{
+		return (int)SalesWorker::GetPay() * (riskLevel / 100.0);
+	}
+	int GetPay() const
+	{
+		return (int)SalesWorker::GetPay() + GetRiskPay();
+	}
+	void ShowSalaryInfo() const
+	{
+		ShowYourName();
+		cout << "Salary : " << SalesWorker::GetPay() << "\n";
+		cout << "risk pay: " << GetRiskPay() << "\n";
+		cout << "sum : " << GetPay() << "\n" << "\n";
+	}
+};
+
 int main(void)
 {
 	// 직원 관리 목적으로 설계된 컨트롤 클래스 객체 생성
 	EmployeeHandler handler;
 
-	// 정규직 등록
-	handler.AddEmployee(new PermanentWorker("KIM", 1000));
-	handler.AddEmployee(new PermanentWorker("LEE", 1500));
+	// 해외 영업직 등록
+	ForeignSalesWorker *fseller1 = new ForeignSalesWorker("Hong", 1000, 0.1, RISK_LEVEL::RISK_A);
+	fseller1->AddSalesResult(7000);
+	handler.AddEmployee(fseller1);
 
-	// 임시직 등록
-	TemporaryWorker * alba = new TemporaryWorker("Jung", 700);
-	alba->AddWorkTime(5); // 5시간 일한 결과 등록
-	handler.AddEmployee(alba);
+	ForeignSalesWorker *fseller2 = new ForeignSalesWorker("Yoon", 1000, 0.1, RISK_LEVEL::RISK_B);
+	fseller2->AddSalesResult(7000);
+	handler.AddEmployee(fseller2);
 
-	// 영업직 등록
-	SalesWorker * seller = new SalesWorker("Hong", 1000, 0.1);
-	seller->AddSalesResult(7000);
-	handler.AddEmployee(seller);
+	ForeignSalesWorker *fseller3 = new ForeignSalesWorker("Lee", 1000, 0.1, RISK_LEVEL::RISK_C);
+	fseller3->AddSalesResult(7000);
+	handler.AddEmployee(fseller3);
 
-	// 이번 달에 지불해야 할 급여의 정보
 	handler.ShowAllSalaryInfo();
-
-	// 이번 달 지불해야 할 급여의 총합
-	handler.ShowTotalSalary();
-
-	// Employee *emp = new Employee("Lee Dong Sook"); // 순수 가상함수 추가에 따른 Compile Error
-	// 문법적으로는 문제가 없다.
-	// 하지만 Employee 클래스는 기초 클래스로서만 의미를 가질뿐 객체의 생성을 목적으로 정의된 클래스가 아니다.
-	// 클래스 중에서는 객체생성 목적으로 정의되지 않는 클래스도 존재한다.
-
-
 	return 0;
-
 }
