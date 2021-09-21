@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class First
+class First // 별도의 대입 연산자를 오버로딩 하지 않음
 {
 private:
 	int num1, num2;
@@ -16,7 +16,7 @@ public:
 
 };
 
-class Second
+class Second // 멤버 대 멤버의 복사가 진행되도록 오버로딩을 진행함.
 {
 private:
 	int num3, num4;
@@ -30,7 +30,7 @@ public:
 
 	Second& operator=(const Second& ref)
 	{
-		cout << "Second& operator=()" << "\n";
+		cout << "Second& operator=()" << "\n"; // 대입 연산자 호출 여부를 확인한다.
 		num3 = ref.num3;
 		num4 = ref.num4;
 		return *this;
@@ -44,8 +44,8 @@ int main(void)
 	Second ssrc(333, 444);
 	Second scpy;
 
-	fcpy = fsrc;
-	scpy = ssrc;
+	fcpy = fsrc; // fcpy.operator=(fsrc)
+	scpy = ssrc; // scpy.operator=(ssrc)
 
 	fcpy.ShowData();
 	scpy.ShowData();
