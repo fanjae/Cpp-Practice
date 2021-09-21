@@ -36,3 +36,28 @@ public:
 		return *this;
 	}
 };
+
+int main(void)
+{
+	First fsrc(111, 222);
+	First fcpy;
+	Second ssrc(333, 444);
+	Second scpy;
+
+	fcpy = fsrc;
+	scpy = ssrc;
+
+	fcpy.ShowData();
+	scpy.ShowData();
+
+	First fob1, fob2;
+	Second sob1, sob2;
+	fob1 = fob2 = fsrc;
+	sob1 = sob2 = ssrc;
+
+	fob1.ShowData();
+	fob2.ShowData();
+	sob1.ShowData();
+	sob2.ShowData();
+	return 0;
+}
