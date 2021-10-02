@@ -22,7 +22,7 @@ public:
 		return arr[idx]; // 인덱스에 해당하는 배열요소를 반환한다.
 		// 참조형이 반환됨에 따라서, 값의 참조 뿐만 아니라 변경도 가능하다.
 	}
-	BoundCheckIntArray()
+	~BoundCheckIntArray()
 	{
 		delete[] arr;
 	}
