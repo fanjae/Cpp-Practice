@@ -42,6 +42,9 @@ int main(void)
 
 	cpy = 3 * pos;
 	cpy.ShowPosition();
+	
+	cpy = 5 * pos;
+	cpy.ShowPosition();
 	return 0;
 
 }
