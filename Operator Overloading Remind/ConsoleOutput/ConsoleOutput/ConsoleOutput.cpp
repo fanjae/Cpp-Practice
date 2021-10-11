@@ -57,5 +57,8 @@ int main(void)
 	cout << 123;
 	endl(cout);
 
+	// cout << 123 << endl << 3.14 << endl;
+	// 위와 같은 문장은 실행할 수 없다.
+
 	return 0;
 }
