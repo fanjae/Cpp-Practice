@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{628476F0-24C4-41A3-B86C-65710B5E3F2C}</ProjectGuid>
+    <ProjectGuid>{109CD87C-03FC-4DE7-A554-721D0921B0D3}</ProjectGuid>
     <RootNamespace>STDString</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
