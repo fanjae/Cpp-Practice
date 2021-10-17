@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointSwap", "PointSwap\PointSwap.vcxproj", "{39310ACD-71F3-497E-AFDB-004089747ADA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Debug|x64.ActiveCfg = Debug|x64
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Debug|x64.Build.0 = Debug|x64
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Debug|x86.ActiveCfg = Debug|Win32
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Debug|x86.Build.0 = Debug|Win32
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Release|x64.ActiveCfg = Release|x64
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Release|x64.Build.0 = Release|x64
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Release|x86.ActiveCfg = Release|Win32
+		{39310ACD-71F3-497E-AFDB-004089747ADA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BBF0D9B-7D7E-40CD-A725-6271F7355800}
+	EndGlobalSection
+EndGlobal
