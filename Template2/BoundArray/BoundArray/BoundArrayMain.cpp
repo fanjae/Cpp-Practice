@@ -3,43 +3,45 @@
 #include "PointTemplate.h"
 using namespace std;
 
+// 클래스 템플릿을 기반으로 켐플릿 클래스의 객체를저장.
+// Point <int> 와 같은 형태로 저장이 가능함.
 int main(void)
 {
-	/* int형 정수 저장 */
-	BoundCheckArray<int> iarr(5);
-	for (int i = 0; i < 5; i++)
+	BoundCheckArray<Point<int>> oarr1(3);
+	oarr1[0] = Point<int>(3, 4);
+	oarr1[1] = Point<int>(5, 6);
+	oarr1[2] = Point<int>(7, 8);
+
+	for (int i = 0; i < oarr1.GetArrLen(); i++)
 	{
-		iarr[i] = (i + 1) * 11;
-	}
-	for (int i = 0; i < 5; i++)
-	{
-		cout << iarr[i] << endl;
+		oarr1[i].ShowPosition();
 	}
 
-	/* Point 객체 저장 */
-	BoundCheckArray<Point<int>> oarr(3);
-	oarr[0] = Point<int>(3, 4);
-	oarr[1] = Point<int>(5, 6);
-	oarr[2] = Point<int>(7, 8);
-	for (int i = 0; i < oarr.GetArrLen(); i++)
+	BoundCheckArray<Point<double>> oarr2(3);
+	oarr2[0] = Point<double>(3.14, 4.31);
+	oarr2[1] = Point<double>(5.09, 6.07);
+	oarr2[2] = Point<double>(7.82, 8.54);
+
+	for (int i = 0; i < oarr2.GetArrLen(); i++)
 	{
-		oarr[i].ShowPosition();
+		oarr2[i].ShowPosition();
 	}
 
-	/* Point 객체 주소값 저장 */
-	typedef Point * POINT_PTR;
-	BoundCheckArray<POINT_PTR> parr(3);
-	parr[0] = new Point(3, 4);
-	parr[1] = new Point(5, 6);
-	parr[2] = new Point(7, 8);
-	for (int i = 0; i < parr.GetArrLen(); i++)
+	typedef Point<int> * POINT_PTR;
+	BoundCheckArray<POINT_PTR> oparr(3);
+	oparr[0] = new Point<int>(11, 12);
+	oparr[1] = new Point<int>(13, 14);
+	oparr[2] = new Point<int>(15, 16);
+
+	for (int i = 0; i < oparr.GetArrLen(); i++)
 	{
-		cout << *(parr[i]);
+		oparr[i]->ShowPosition();
 	}
 
-	delete parr[0];
-	delete parr[1];
-	delete parr[2];
+	delete oparr[0];
+	delete oparr[1];
+	delete oparr[2];
+
 	return 0;
 }
 
