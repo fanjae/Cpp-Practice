@@ -7,7 +7,7 @@ int main(void)
 	cout << "두 개의 숫자 입력 : ";
 	cin >> num1 >> num2;
 
-	try
+	try // try는 단순히 예외가 발생할만한 영역을 묶는게 아닌, 모든 문장을 함께 묶어 하나의 일 단위로 구성하는 것이다.
 	{
 		if (num2 == 0)
 			throw num2;
