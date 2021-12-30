@@ -8,3 +8,5 @@ int main(void)
 	printf("iNum : %d\n", iNum);
 	return 0;
 }
+
+// ÃâÀú : https://blog.naver.com/ruvendix/220908681017
