@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InheritAssignOperation", "InheritAssignOperation\InheritAssignOperation.vcxproj", "{D4A132D9-F8B3-491B-86A8-907C2417FF8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Debug|x64.ActiveCfg = Debug|x64
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Debug|x64.Build.0 = Debug|x64
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Debug|x86.Build.0 = Debug|Win32
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Release|x64.ActiveCfg = Release|x64
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Release|x64.Build.0 = Release|x64
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Release|x86.ActiveCfg = Release|Win32
+		{D4A132D9-F8B3-491B-86A8-907C2417FF8C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCB72001-79FE-4D21-BCDD-CA0ADE2B1325}
+	EndGlobalSection
+EndGlobal
