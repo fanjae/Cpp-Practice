@@ -44,6 +44,9 @@ int main()
 
 	// 문제의 소지가 있는 대입
 	accmulate(dup, five) = four;
+	// five의 데이터를 dup에 더한다.
+	// four의 내용으로 dup의 내용을 덮어쓴다.
+
 	std::cout << "문제 소지가 있는 대입 이후 dup 출력 : \n";
 	display(dup);
 	return 0;
