@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Listing08_11", "Listing08_1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Listing08_12", "Listing08_12\Listing08_12.vcxproj", "{4748C4ED-953A-4A4D-B6DE-BF215C8AE573}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Listing08_13", "Listing08_13\Listing08_13.vcxproj", "{041DD264-E7A0-424A-ABDD-BD4D163C3C92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{4748C4ED-953A-4A4D-B6DE-BF215C8AE573}.Release|x64.Build.0 = Release|x64
 		{4748C4ED-953A-4A4D-B6DE-BF215C8AE573}.Release|x86.ActiveCfg = Release|Win32
 		{4748C4ED-953A-4A4D-B6DE-BF215C8AE573}.Release|x86.Build.0 = Release|Win32
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Debug|x64.ActiveCfg = Debug|x64
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Debug|x64.Build.0 = Debug|x64
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Debug|x86.ActiveCfg = Debug|Win32
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Debug|x86.Build.0 = Debug|Win32
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Release|x64.ActiveCfg = Release|x64
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Release|x64.Build.0 = Release|x64
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Release|x86.ActiveCfg = Release|Win32
+		{041DD264-E7A0-424A-ABDD-BD4D163C3C92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
