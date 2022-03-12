@@ -31,7 +31,7 @@ void strcount(std::string str)
 	int count = 0;					// 자동 지역 변수
 
 	cout << "\"" << str << "\"에는 ";
-	while (str[count] != 0)
+	while (str[count++] != 0)
 	{
 		
 	}
