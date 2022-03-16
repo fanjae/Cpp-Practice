@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "For_each3", "For_each3\For_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lessandgreater", "lessandgreater\lessandgreater.vcxproj", "{B53941BE-A665-4224-9B4B-B78EC2432B60}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunctionObjectSpecial", "FunctionObjectSpecial\FunctionObjectSpecial.vcxproj", "{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -391,6 +393,14 @@ Global
 		{B53941BE-A665-4224-9B4B-B78EC2432B60}.Release|x64.Build.0 = Release|x64
 		{B53941BE-A665-4224-9B4B-B78EC2432B60}.Release|x86.ActiveCfg = Release|Win32
 		{B53941BE-A665-4224-9B4B-B78EC2432B60}.Release|x86.Build.0 = Release|Win32
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Debug|x64.ActiveCfg = Debug|x64
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Debug|x64.Build.0 = Debug|x64
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Debug|x86.ActiveCfg = Debug|Win32
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Debug|x86.Build.0 = Debug|Win32
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Release|x64.ActiveCfg = Release|x64
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Release|x64.Build.0 = Release|x64
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Release|x86.ActiveCfg = Release|Win32
+		{A9244B2D-ADA3-426C-A07A-8D6B264CB16B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
