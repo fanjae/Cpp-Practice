@@ -1,4 +1,5 @@
-#pragma once
+#pragma once // 개정 파일
+
 #ifndef STOCK20_H_
 #define STOCK20_H_
 #include <string>
