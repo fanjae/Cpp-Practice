@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Exercise1.cpp" />
+    <ClCompile Include="account.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="account.h" />
