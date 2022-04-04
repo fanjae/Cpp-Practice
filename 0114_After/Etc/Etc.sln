@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector_iter2", "vector_iter
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "deque_iter", "deque_iter\deque_iter.vcxproj", "{409371D7-A879-43CE-9FD1-E3B0E0CCED48}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "functionobject_sort", "functionobject_sort\functionobject_sort.vcxproj", "{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -451,6 +453,14 @@ Global
 		{409371D7-A879-43CE-9FD1-E3B0E0CCED48}.Release|x64.Build.0 = Release|x64
 		{409371D7-A879-43CE-9FD1-E3B0E0CCED48}.Release|x86.ActiveCfg = Release|Win32
 		{409371D7-A879-43CE-9FD1-E3B0E0CCED48}.Release|x86.Build.0 = Release|Win32
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Debug|x64.ActiveCfg = Debug|x64
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Debug|x64.Build.0 = Debug|x64
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Debug|x86.ActiveCfg = Debug|Win32
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Debug|x86.Build.0 = Debug|Win32
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Release|x64.ActiveCfg = Release|x64
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Release|x64.Build.0 = Release|x64
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Release|x86.ActiveCfg = Release|Win32
+		{0598F3A7-30C0-4BAA-A19B-36CB8417FDE3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
