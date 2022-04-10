@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="account.cpp" />
+    <ClCompile Include="useacnnt.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="account.h" />

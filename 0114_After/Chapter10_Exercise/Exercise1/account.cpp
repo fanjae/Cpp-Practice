@@ -1,6 +1,7 @@
 ﻿#include<iostream>
 #include<cctype>
 #include"account.h"
+#pragma warning (disable:4996)
 
 BankAccount::BankAccount(const char* client, const char* num, double bal)
 {
