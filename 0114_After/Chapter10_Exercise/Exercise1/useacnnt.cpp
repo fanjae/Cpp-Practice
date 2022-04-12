@@ -9,7 +9,9 @@ int main()
 	test.show();
 	test.withdraw(1500);
 	test.withdraw(300);
+	test.withdraw(200);
 	test.show();
+
 
 	return 0;
 }
